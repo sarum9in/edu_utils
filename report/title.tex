@@ -32,7 +32,12 @@
     Выполнил\\*
     Студент группы \mygroup \hfill \myname\\*
     \vspace{1.5em}
+\ifdefmacro{\myteacherdegree}{
+    Принял \\*
+    \myteacherdegree \hfill \myteacher\\*
+}{
     Принял \hfill \myteacher\\*
+}
 \end{flushleft}
 
 \vspace{\fill}
